@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan & Pay</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            background: rgba(0,0,0,0.5);
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        img {
+            width: 250px;
+            margin-top: 15px;
+            border-radius: 10px;
+            background: white;
+            padding: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffc107;
+            color: black;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Scan & Pay ₹10</h1>
+    <p>Scan the QR code below to complete payment</p>
+
+    <img src="qrsumit.png" alt="QR Code">
+
+    <br>
+    <button onclick="goBack()">⬅ Back</button>
+</div>
+
+<script>
+    function goBack() {
+        window.location.href = "index.html";
+    }
+</script>
+
+</body>
+</html>
